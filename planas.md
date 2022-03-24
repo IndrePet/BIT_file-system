@@ -1,4 +1,4 @@
-# Veiksmu planas:
+# Veiksmų planas:
 
 1. Sukurti failą `petras.json`, kurio pradinis turinys yra:
 
