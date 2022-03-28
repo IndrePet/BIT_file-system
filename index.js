@@ -4,10 +4,13 @@ const petras = {
   name: 'Petras',
 };
 
-const status = await file.create('users', 'petras.json', petras);
-console.log(status);
-file.read();
+const createFileStatus = await file.create('users', 'petras.json', petras);
+console.log(createFileStatus);
+const readFileStatus1 = await file.read('users', 'petras.json');
+console.log(readFileStatus1);
 file.update();
-file.read();
+const readFileStatus2 = await file.read('users', 'petras.json');
+console.log(readFileStatus2);
 file.delete();
-file.read();
+const readFileStatus3 = await file.read('users', 'petras.json');
+console.log(readFileStatus3);
